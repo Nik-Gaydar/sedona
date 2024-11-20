@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedona</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <nav class="header__nav">
+        <a href="#" class="header__logo">
+          <img src="" alt="sedona" class="header__logo-image">
+        </a>
+
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">О Седоне</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Гостиницы</a>
+          </li>
+        </ul>
+
+        <ul class="header__actions">
+          <li class="header__actions-item">
+            <a href="#" class="header__actions-icon">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="header__actions-item">
+            <a href="#" class="header__actions-icon">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <li class="header__actions-item">
+            <a href="#" class="header__actions-icon button">Хочу сюда!</a>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="filter">
+      <div class="filter__wrapper">
+        <h1 class="filter__title">Гостиницы Седоны</h1>
+          <ul class="filter__breadcrumbs">
+            <li class="filter__breadcrumbs-item">
+              <a href="/index.html" class="filter__breadcrumbs-link">
+                <span class="visually-hidden">Главная</span>
+              </a>
+            </li>
+            <li class="filter__breadcrumbs-item">
+              <a href="" class="filter__breadcrumbs-link">
+                Гостиницы
+              </a>
+            </li>
+          </ul>
+
+        <form action="https://echo.htmlacademy.ru/" method="get" class="filter__form">
+          <fieldset class="filter__fieldset">
+            <legend class="filter__title">Инфраструктура:</legend>
+
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label class="filter__control">
+                  <input type="checkbox" name="infrastructure" value="pool" checked class="filter__input"> Бассейн
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__control">
+                  <input type="checkbox" name="infrastructure" value="parking" checked class="filter__input"> Парковка
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__control">
+                  <input type="checkbox" name="infrastructure" value="wifi" class="filter__input"> Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filter__fieldset">
+            <legend class="filter__title">Тип жилья:</legend>
+
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label class="filter__control">
+                  <input type="radio" name="apartment-type" value="hotel" checked class="filter__input"> Гостиница
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__control">
+                  <input type="radio" name="apartment-type" value="model" class="filter__input"> Мотель
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__control">
+                  <input type="radio" name="apartment-type" value="apartments" class="filter__input"> Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filter__fieldset">
+            <legend class="filter__title">Стоимость, ₽:</legend>
+
+            <div class="filter__range">
+              <label class="filter__range-field">
+                <span class="filter__range-title">от</span>
+                <input type="number" name="price-min" value="0" min="0" max="10000" step="100" class="filter__range-input">
+              </label>
+
+              <label class="filter__range-field">
+                <span class="filter__range-title">до</span>
+                <input type="number" name="price-max" value="9000" min="0" max="10000" step="100"class="filter__range-input">
+              </label>
+
+              <div class="filter__range-slider slider">
+                <div class="filter__slider-bar">
+                  <button class="filter__slider-thumb" type="button">
+                    <span class="visually-hidden">Ручка минимальной цены</span>
+                  </button>
+                  <button class="filter__slider-thumb" type="button">
+                    <span class="visually-hidden">Ручка максимальной цены</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="filter__button">
+            <button type="submit" class="filter__apply">Применить</button>
+            <button type="reset" class="filter__reset">Сбросить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <ul class="footer__social">
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+
+      <a href="tel:+78128121212" class="footer__phone">+7 (812) 812-12-12</a>
+
+      <a href="#" class="footer__dev">
+        <img src="/images/logo_htmlacademy.png" alt="Разработано HTML Academy" class="footer__image">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
