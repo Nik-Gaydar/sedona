@@ -12,6 +12,59 @@
   src: url(../assets/fonts/ptsans-700.woff2);
 }
 
+/* общие стили */
+
 body {
+    color: #333333;
+
     font-family: "PTSans", "Arial", sans-serif;
+    font-size: 18px;
   }
+
+ul {
+  list-style: none;
+}
+
+.button {
+  border: none;
+  background-color: #756257;
+  color: #FFFFFF;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-secondary {
+  background-color: #83B3D3;
+}
+
+.button-large {
+  font-size: 20px;
+}
+
+/* Header */
+
+.header__menu {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.header__menu-link {
+  color: #000000;
+
+  text-decoration: none;
+}
+
+/* Footer */
+
+.footer__phone {
+  color: #000000;
+
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
